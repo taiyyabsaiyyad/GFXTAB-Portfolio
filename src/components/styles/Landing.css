@@ -397,13 +397,18 @@ h2.landing-info-h2 {
 }
 
 .landing-shining-text {
-  background: linear-gradient(90deg, #ccc, #fff 40%, #ff9a00 50%, #2fa4ff 60%, #fff 100%);
-  background-size: 200% auto;
-  color: transparent !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  animation: shine 3s linear infinite;
+  color: #fff !important;
+  text-shadow: 0 0 10px #ff9a00, 0 0 20px #2fa4ff;
+  animation: pulse-glow 2s infinite alternate;
   display: inline-block;
   font-weight: 700;
+}
+
+@keyframes pulse-glow {
+  from {
+    text-shadow: 0 0 10px #ff9a00, 0 0 20px #2fa4ff;
+  }
+  to {
+    text-shadow: 0 0 20px #2fa4ff, 0 0 30px #ff9a00;
+  }
 }
