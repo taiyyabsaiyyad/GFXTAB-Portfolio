@@ -397,18 +397,23 @@ h2.landing-info-h2 {
 }
 
 .landing-shining-text {
-  color: #fff !important;
-  text-shadow: 0 0 10px #ff9a00, 0 0 20px #2fa4ff;
-  animation: pulse-glow 2s infinite alternate;
+  color: #2fa4ff !important;
+  animation: classy-colors 4s infinite alternate ease-in-out;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 800;
 }
 
-@keyframes pulse-glow {
-  from {
-    text-shadow: 0 0 10px #ff9a00, 0 0 20px #2fa4ff;
+@keyframes classy-colors {
+  0% {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
   }
-  to {
-    text-shadow: 0 0 20px #2fa4ff, 0 0 30px #ff9a00;
+  50% {
+    color: #14b8a6;
+    text-shadow: 0 0 20px rgba(20, 184, 166, 0.6);
+  }
+  100% {
+    color: #2fa4ff;
+    text-shadow: 0 0 20px rgba(47, 164, 255, 0.6);
   }
 }
